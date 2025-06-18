@@ -1,0 +1,24 @@
+.contenedor{
+    background-color: #3f5e77;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+#formPrincipal{
+    padding: 30px;
+    background-color: #7590a5;
+    border-radius: 10px;
+    display: block;
+    width: 80%;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.botones{
+
+    width: 90%;
+    border-radius: 5px;
+    margin-left: 5px;
+
+}

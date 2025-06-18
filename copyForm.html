@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Statics/copyStyles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Formulario Completo</h1>
+        <form id="formPrincipal">
+        <!--Nombre del usuario-->
+            <label for="nombre"> Nombre Completo :</label><br>
+            <input type="text" id="nombre" name="nombre" class="botones" required placeholder="Nombre Completo">
+
+        <!--Edad Requedida-->
+            <br><br>
+            <label for="edad"> Edad : </label><br>
+            <input type="number" name="edad" id="edad" required class="botones" placeholder="Ingresa tu edad">
+
+        <!--Codigo Postal-->
+            <br><br>
+            <label for="codePostal">Codigo postal</label><br>
+            <input type="number" name="codigoPostal" id="codePostal" class="botones" placeholder="Ingresa tu codigo postal xxxx">
+
+        <!--Generos-->
+            <br> <br>
+            <label for="genero"> Genero </label><br>
+
+            <input type="radio" name="genero" id="genMasculino" value="Masculino" checked>
+            <label for="Masculino"> Masculino </label>
+
+            <input type="radio" name="genero" id="genFemenino" value="Femenino">
+            <label for="Femenino"> Femenino </label>
+            
+            <input type="radio" name="genero" id="genOtro" value="genOtro">
+            <label for="Otro"> Otro </label>
+
+        <!--Intereses (Seleccion multiple)-->
+            <br> <br>
+            <label for="saberIntereses">Intereses (selecciona todos los que apliquen) </label><br>
+            
+            <input type="checkbox" id="tecnologia" name="Intereses" value="tecnologia">
+            <label for="tecno"> Tecnologia </label>
+
+            <input type="checkbox" id="deportes" name="Intereses" value="deportes">
+            <label for="Deportes"> Deportes </label>
+
+            <input type="checkbox" id="musica" name="Intereses" value="musica">
+            <label for="musica"> Musica </label>
+
+            <input type="checkbox" id="arte" name="Intereses" value="arte">
+            <label for="arte"> Arte </label>
+
+        <!--Para la seleccion de pais-->
+            <br> <br>
+            <label for="pais">Pais:</label><br>
+            <select id="pais" name="paisDeProcedencia" placeholder="Selecciona tu Pais" class="botones">
+                <option>Selecciona tu Pais</option>
+                <option value="mexico">Mexico</option>
+                <option value="españa">España</option>
+                <option value="argentina">Argentina</option>
+                <option value="colombia">Colombia</option>
+                <option value="peru">Peru</option>
+                <option value="chile">Chile</option>
+                <option value="venezuela">Venezuela</option>
+                <option value="otroPais">Otro</option>
+            </select>
+
+        <!--Comentarios adicionales-->
+            <br> <br>
+            <label for="comtsAdicionales">Comentarios Adicionales:</label><br>
+            <textarea placeholder="Escribe tu comentario aqui ..." type="text" class="botones"></textarea>
+
+        <!--Subicion de imagenon-->
+            <br> <br>
+            <label for="subrImg">Subir Imagen:</label><br>
+            <div class="botones">
+                <input type="file" id="UsuarioImg" name="Imagen" accept="image/*">
+            </div>
+
+        <!--El submit button-->
+            <br> <br>
+            <button type="submit" class="submit-btn">Enviar formulario</button>
+
+            </form>
+    </div>
+    <script src="./Dynamics/Js/copyForm.js"></script>
+</body>
+</html>
